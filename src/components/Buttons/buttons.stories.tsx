@@ -14,3 +14,9 @@ export default {
 const Template = ({ children, onClick }: TButtonProps) => {
   return <Buttons onClick={onClick}>{children}</Buttons>;
 };
+
+export const allButttons: any = Template.bind({});
+
+allButttons.args = {
+  children: "Contact Me",
+};
