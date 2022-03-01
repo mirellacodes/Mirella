@@ -4,7 +4,8 @@
     "secondary": "#219EBC",
     "orange": "#FB8500",
     "black": "#0E171B",
-    "darkOrange": "#CF5C36"
+    "darkOrange": "#CF5C36",
+    "mauve": "#DABFFF"
   },
   "breakPoints": {
     "s": "576px",
