@@ -1,5 +1,6 @@
 export type TProjectCard = {
   onClick?: () => void;
-  allimg: boolean;
-  className: string;
+  className?: string;
+  projectCard: string;
+  description: string;
 };

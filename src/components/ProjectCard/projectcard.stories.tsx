@@ -11,9 +11,19 @@ export default {
 // This is the template for storybook. It will render the component and display it in storybook
 
 // Inside of the function we are passing in props as we usually do with a normal component and defining what type it is.
-const Template = ({ className, onClick, allimg }: TProjectCard) => {
+const Template = ({
+  className,
+  onClick,
+  projectCard,
+  description,
+}: TProjectCard) => {
   return (
-    <ProjectCard allimg={true} onClick={onClick} className={""}></ProjectCard>
+    <ProjectCard
+      onClick={onClick}
+      projectCard={projectCard}
+      className={className}
+      description={description}
+    ></ProjectCard>
   );
 };
 
@@ -21,4 +31,6 @@ export const allProjectCards: any = Template.bind({});
 
 allProjectCards.args = {
   className: "",
+  projectCard: "This is the project title",
+  description: "this is the description of the project title",
 };
