@@ -34,20 +34,24 @@ export function NavBar({}) {
   ];
   return (
     <>
-      <Text className="logo" textType="h1">
-        Mirella
-      </Text>
-      <S.NavBarUL>
-        {MenuItems.map((item, index) => {
-          return (
-            <li key={index}>
-              <a className={item.cName} href={item.direct}>
-                {item.title}
-              </a>
-            </li>
-          );
-        })}
-      </S.NavBarUL>
+      <S.NavWrapper>
+        <S.TextWrapper>
+          <Text className="logo" textType="h1">
+            Mirella
+          </Text>
+        </S.TextWrapper>
+        <S.NavBarUL>
+          {MenuItems.map((item, index) => {
+            return (
+              <li key={index}>
+                <a className={item.cName} href={item.direct}>
+                  {item.title}
+                </a>
+              </li>
+            );
+          })}
+        </S.NavBarUL>
+      </S.NavWrapper>
     </>
   );
 }

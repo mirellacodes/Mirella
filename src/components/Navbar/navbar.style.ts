@@ -1,19 +1,14 @@
 import styled from "styled-components";
 
 export const NavBarUL = styled.ul`
-  background: white;
-  justify-content: center;
-  align-items: center;
-  justify-content: center;
-  align-items: center;
-  padding: 0;
-  display: flex;
-  font-size: 1.2rem;
-  list-style-type: none;
-  z-index: 1;
-  height: 80px;
-  top: 0;
-  background: white;
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  grid-gap: 10px;
+  list-style: none;
+  text-align: center;
+  width: 80vw;
+  justify-content: end;
+  margin-right: 1.5rem;
 
   a:link {
     text-decoration: none;
@@ -53,5 +48,32 @@ export const NavBarUL = styled.ul`
 
   .menu-icon {
     display: none;
+  }
+`;
+
+export const NavWrapper = styled.nav`
+  background: white;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  position: fixed;
+  top: 0;
+
+  .logo {
+    justify-self: start;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+`;
+
+export const TextWrapper = styled.div`
+  .logo {
+    color: black;
+    padding: 0;
   }
 `;
