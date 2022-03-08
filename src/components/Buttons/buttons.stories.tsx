@@ -12,7 +12,11 @@ export default {
 
 // Inside of the function we are passing in props as we usually do with a normal component and defining what type it is.
 const Template = ({ children, onClick }: TButtonProps) => {
-  return <Buttons onClick={onClick}>{children}</Buttons>;
+  return (
+    <Buttons onClick={onClick} allBtns={false}>
+      {children}
+    </Buttons>
+  );
 };
 
 export const allButttons: any = Template.bind({});
