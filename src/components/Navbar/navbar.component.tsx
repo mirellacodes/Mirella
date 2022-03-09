@@ -7,28 +7,28 @@ export function NavBar({}) {
   const MenuItems = [
     {
       title: "HOME",
-      direct: "/",
+      direct: "./home",
       cName: "nav-links",
     },
     {
       title: "PORTFOLIO",
-      direct: "portfolio",
+      direct: "./portfolio",
       cName: "nav-links",
     },
     {
       title: "ABOUT ME",
-      direct: "aboutme",
+      direct: "./aboutme",
 
       cName: "nav-links",
     },
     {
       title: "CONTACT ME",
-      direct: "contactme",
+      direct: "./contactme",
       cName: "nav-links",
     },
     {
       title: "Home",
-      direct: "#",
+      direct: "./#",
       cName: "nav-links-mobile",
     },
   ];
