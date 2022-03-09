@@ -1,16 +1,3 @@
 {
-  "extends": "next/core-web-vitals",
-  "plugins": ["unused-imports"],
-  "rules": {
-    "prefer-const": [
-      "error",
-      {
-        "destructuring": "any",
-        "ignoreReadBeforeAssign": false
-      }
-    ],
-    "eqeqeq": [2, "allow-null"],
-    "no-var": "error",
-    "no-unused-vars": "error"
-  }
+  "extends": ["next/babel", "next/core-web-vitals"]
 }
