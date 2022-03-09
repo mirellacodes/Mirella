@@ -2,7 +2,7 @@
 
 ## Website
 
-https://mirella-nathina.vercel.app/
+https://mirella-nathina.vercel.app/ <br>
 The app is not fully functional yet!
 
 ## What is it?
