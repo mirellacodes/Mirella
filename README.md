@@ -2,7 +2,7 @@
 
 ## Website
 
-Yet to be deployed...
+https://mirella-nathina.vercel.app/
 The app is not fully functional yet!
 
 ## What is it?
