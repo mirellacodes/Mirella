@@ -2,7 +2,7 @@
 
 ## Website
 
-Yet to be deployed...
+https://mirella-nathina.vercel.app/ <br>
 The app is not fully functional yet!
 
 ## What is it?
@@ -23,7 +23,7 @@ I have created my very own portfolio website which will showcase the projects I 
 ## How to run this in your code editor?
 
 ```
-cd portfolio
+cd mirella
 npm i
 npm run dev
 ```
