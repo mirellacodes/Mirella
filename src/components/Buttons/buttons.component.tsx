@@ -4,7 +4,12 @@ import { TButtonProps } from "./buttons.definitions";
 import { ThemeProvider } from "styled-components";
 import styles from "../../styles/style.config.json";
 
-export function Buttons({ children, onClick, allBtns }: TButtonProps) {
+export function Buttons({
+  children,
+  onClick,
+  allBtns,
+  className,
+}: TButtonProps) {
   const theme = {
     backgroundColor: allBtns ? styles.colors.primary : styles.colors.mauve,
     fontColor: allBtns ? "white" : styles.colors.black,
@@ -15,7 +20,7 @@ export function Buttons({ children, onClick, allBtns }: TButtonProps) {
   };
   return (
     <ThemeProvider theme={theme}>
-      <S.Buttons>{children}</S.Buttons>
+      <S.Buttons className={className}>{children}</S.Buttons>
     </ThemeProvider>
   );
 }

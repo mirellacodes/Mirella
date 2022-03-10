@@ -30,6 +30,7 @@ export const NavBarUL = styled.ul`
     text-decoration: none;
     padding: 0.5rem 1rem;
     color: black;
+    font-weight: 600;
   }
 
   .nav-links:hover {
@@ -68,6 +69,7 @@ export const NavWrapper = styled.nav`
     justify-self: start;
     margin-left: 10px;
     cursor: pointer;
+    font-weight: lighter;
   }
 `;
 
