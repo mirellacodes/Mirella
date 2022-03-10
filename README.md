@@ -23,7 +23,7 @@ I have created my very own portfolio website which will showcase the projects I 
 ## How to run this in your code editor?
 
 ```
-cd mirella
+cd into the right dir
 npm i
 npm run dev
 ```
