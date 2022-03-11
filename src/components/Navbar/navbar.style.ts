@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import style from "../../styles/style.config.json";
 
 export const NavBarUL = styled.ul`
   display: grid;
@@ -70,6 +71,16 @@ export const NavWrapper = styled.nav`
     margin-left: 10px;
     cursor: pointer;
     font-weight: lighter;
+  }
+  @media (max-width: ${style.breakPoints.m}) {
+    .navBar {
+      visibility: hidden;
+    }
+    .logo {
+      margin-left: 60px;
+
+      font-weight: lighter;
+    }
   }
 `;
 

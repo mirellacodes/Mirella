@@ -40,7 +40,7 @@ export function NavBar({}) {
             Mirella
           </Text>
         </S.TextWrapper>
-        <S.NavBarUL>
+        <S.NavBarUL className="navBar">
           {MenuItems.map((item, index) => {
             return (
               <li key={index}>
