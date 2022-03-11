@@ -41,6 +41,12 @@ const Home: NextPage = () => {
             </Text>
           </FadeIn>
           <FadeIn delay={1000} transitionDuration={1800}>
+            <Text className="finalSentence">
+              This website is created with NextJs and TypeScript.
+            </Text>
+          </FadeIn>
+
+          <FadeIn delay={1500} transitionDuration={2000}>
             <Buttons className="contactMe">Contact Me </Buttons>
           </FadeIn>
         </S.Container>

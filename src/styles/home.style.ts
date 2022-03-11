@@ -53,4 +53,12 @@ export const HomeWrapper = styled.div`
     font-style: italic;
     text-align: left;
   }
+
+  .finalSentence {
+    color: white;
+
+    text-align: center;
+    font-style: italic;
+    text-align: left;
+  }
 `;
