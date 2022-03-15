@@ -12,7 +12,7 @@ export function Buttons({
 }: TButtonProps) {
   const theme = {
     backgroundColor: allBtns ? styles.colors.primary : styles.colors.mauve,
-    fontColor: allBtns ? "white" : styles.colors.black,
+    fontColor: allBtns ? "white" : "black",
     width: allBtns ? 100 : 250,
     fontSize: allBtns ? 0.8 : 1.5,
     height: allBtns ? 25 : 60,
