@@ -4,13 +4,15 @@ import style from "./style.config.json";
 export const Portfolio = styled.div`
   margin: 0;
   border: 2px red solid;
-  position: relative;
+  height: 100vh;
+  overflow: auto;
+  /* position: absolute; */
   display: flex;
+
   justify-content: start;
-  /* flex-direction: column; */
+  flex-direction: column;
   top: 15%;
   left: 10%;
-
   .portfolio-sub {
     color: ${style.colors.lightergreen};
     font-style: italic;
@@ -19,9 +21,14 @@ export const Portfolio = styled.div`
 `;
 
 export const ProjectWrapper = styled.div`
-  border: 5px green solid;
-  top: 20%;
+  /* border: 5px green solid;
+  margin-top: 100px;
   position: relative;
   display: flex;
-  justify-content: start;
+  justify-content: start; */
+`;
+
+export const TextProjectWrapper = styled.div`
+  border: 10px teal solid;
+  margin-top: 10em;
 `;

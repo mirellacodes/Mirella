@@ -4,6 +4,7 @@ import styles from "../../styles/style.config.json";
 import { TProjectCard } from "./projectcard.defintion";
 import { Text } from "../Text/text.component";
 import * as S from "./projectcard.style";
+import { url } from "inspector";
 
 export function ProjectCard({
   onClick,
@@ -11,14 +12,43 @@ export function ProjectCard({
   projectCard,
   description,
 }: TProjectCard) {
+  const ProjectItems = [
+    {
+      projectCard: "Emily Dickinson Biography",
+      description: "This was my first project using only HTML and CSS",
+      className: "emily-dickinson",
+    },
+    {
+      projectCard: "Task Tracker - School of Code",
+      description:
+        "An app that allows bootcampers from School of Code to track their workshop. This was my first Project Week working in an agile team of 4. We used React to serve our front-end and PostgreSQL and restful API as our back-end.",
+      className: "task-tracker",
+    },
+    {
+      projectCard: "Pawcket",
+      description:
+        "This is a social media app for pet lovers. The tech stack used were Firebase, TypeScript, Styled Components, NextJS, Cypress and Storybook",
+
+      className: "pawcket",
+    },
+  ];
+
   return (
-    <S.Wrapper>
-      <S.ProjCard onClick={onClick} className={className}>
-        <Text className="project" textType="h2">
-          {projectCard}
-        </Text>
-        <Text>{description}</Text>
-      </S.ProjCard>
-    </S.Wrapper>
+    <>
+      {ProjectItems.map((item, index) => {
+        return (
+          <S.Wrapper className={item.className}>
+            <S.ProjCard
+              className={item.className}
+              key={index}
+              onClick={onClick}
+            >
+              <Text textType="h2">{item.projectCard}</Text>
+              <Text>{item.description}</Text>
+            </S.ProjCard>
+          </S.Wrapper>
+        );
+      })}
+    </>
   );
 }

@@ -8,18 +8,17 @@ import { ProjectCard } from "../components/ProjectCard/projectcard.component";
 const Portfolio: NextPage = () => {
   return (
     <>
-      <NavBar />
       <MainLayout>
+        <NavBar />
         <S.Portfolio>
-          <Text textType="h3" className="portfolio-sub">
-            View My Projects
-          </Text>
-          {/* <S.ProjectWrapper>
-            <ProjectCard
-              projectCard={"Emily Dickinson"}
-              description={"This is my first project using only HTML and CSS"}
-            />
-          </S.ProjectWrapper> */}
+          <S.TextProjectWrapper>
+            <Text textType="h3" className="portfolio-sub">
+              View My Projects
+            </Text>
+          </S.TextProjectWrapper>
+          <S.ProjectWrapper>
+            <ProjectCard />
+          </S.ProjectWrapper>
         </S.Portfolio>
       </MainLayout>
     </>

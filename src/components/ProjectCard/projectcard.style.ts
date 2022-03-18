@@ -1,15 +1,19 @@
 import styled from "styled-components";
+import styles from "../../styles/style.config.json";
 
 export const Wrapper = styled.div`
   position: relative;
-  width: 280px;
+  border: green solid 5px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-left: 3%;
+  padding-right: 3%;
 `;
 
 export const ProjCard = styled.div`
-  /* display: block;
-  width: 100%;
-  height: auto; */
-  width: 100%;
+  width: 700px;
+  height: 700px;
   background-color: white;
   border-radius: 22px;
   padding: 10px;
@@ -17,4 +21,19 @@ export const ProjCard = styled.div`
   padding-bottom: 20px;
   box-shadow: 5px 5px 5px rgba(14, 23, 27, 0.4);
   margin-bottom: 20px;
+  border: pink solid 5px;
+  text-align: center;
+  color: ${styles.colors.purple};
+  font-style: italic;
+  font-weight: 600;
+
+  .project {
+    color: ${styles.colors.mauve};
+    font-weight: 500;
+  }
+
+  .emily-dickinson {
+    background-image: url(https://www.emilydickinsonmuseum.org/wp-content/uploads/Theme-Images/daguerreotype-cropped-corrected-1.jpg);
+    border: 4px green solid;
+  }
 `;
