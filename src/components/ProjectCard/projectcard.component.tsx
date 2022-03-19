@@ -16,20 +16,22 @@ export function ProjectCard({
     {
       projectCard: "Emily Dickinson Biography",
       description: "This was my first project using only HTML and CSS",
-      className: "emily-dickinson",
+      className: "project",
+      image:
+        "https://www.emilydickinsonmuseum.org/wp-content/uploads/Theme-Images/daguerreotype-cropped-corrected-1.jpg",
     },
     {
       projectCard: "Task Tracker - School of Code",
       description:
         "An app that allows bootcampers from School of Code to track their workshop. This was my first Project Week working in an agile team of 4. We used React to serve our front-end and PostgreSQL and restful API as our back-end.",
-      className: "task-tracker",
+      className: "project",
     },
     {
       projectCard: "Pawcket",
       description:
         "This is a social media app for pet lovers. The tech stack used were Firebase, TypeScript, Styled Components, NextJS, Cypress and Storybook",
 
-      className: "pawcket",
+      className: "project",
     },
   ];
 
@@ -37,7 +39,7 @@ export function ProjectCard({
     <>
       {ProjectItems.map((item, index) => {
         return (
-          <S.Wrapper className={item.className}>
+          <S.Wrapper>
             <S.ProjCard
               className={item.className}
               key={index}
