@@ -20,7 +20,9 @@ export function Buttons({
   };
   return (
     <ThemeProvider theme={theme}>
-      <S.Buttons className={className}>{children}</S.Buttons>
+      <S.Buttons className={className} onClick={onClick}>
+        {children}
+      </S.Buttons>
     </ThemeProvider>
   );
 }

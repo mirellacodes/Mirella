@@ -9,6 +9,7 @@ import * as S from "../styles/home.style";
 import { Buttons } from "../components/Buttons/buttons.component";
 import FadeIn from "react-fade-in";
 import Portfolio from "./portfolio";
+import router from "next/router";
 
 const Home: NextPage = () => {
   return (
@@ -53,7 +54,12 @@ const Home: NextPage = () => {
             </FadeIn>
 
             <FadeIn delay={1500} transitionDuration={2000}>
-              <Buttons className="contactMe">Contact Me </Buttons>
+              <Buttons
+                onClick={() => router.push("/contactme")}
+                className="contactMe"
+              >
+                Contact Me
+              </Buttons>
             </FadeIn>
           </S.Container>
         </S.HomeWrapper>
