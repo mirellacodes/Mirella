@@ -6,14 +6,61 @@ import * as S from "../styles/aboutme.style";
 
 const AboutMe: NextPage = () => {
   return (
-    <>
-      <MainLayout>
-        <NavBar />
-        <S.TextWrap>
-          <Text className="tobebuilt"> Yet to be build</Text>
-        </S.TextWrap>
-      </MainLayout>
-    </>
+    <MainLayout>
+      <NavBar />
+      <S.AboutMe>
+        <S.Container>
+          <S.TextWrap>
+            <Text textType="h1" className="topTitle">
+              LIFE BEFORE CODING
+            </Text>
+            <Text className="first-bio">
+              I had always had an interest in technology however I had the
+              preconceived notion that you had to have a STEM background or
+              excell in Maths in order to pursue a path in tech. I went on to
+              study Criminology and Sociology at the university. Throughout the
+              course, we taught how to conduct a research using SPSS (Social
+              Package for the Social Sciences) which is software that allows you
+              to record, edit and analyse all sorts of data. I fell in love with
+              working with the data and this made me want to pursue a career in
+              Tech. I ended up researching on how to get myself onto this path.
+              I was lucky to have a friend who taught me the basic HTML and CSS
+              which fueled my passion even further. I ended up in dilemma
+              whether to teach myself, enroll in a conversion Master degree at
+              the University or enroll at a Bootcamp.
+            </Text>
+            <Text className="first-bio">
+              I ended up researching on how to get myself onto this path. I was
+              lucky to have a friend who taught me the basic HTML and CSS which
+              fuel my passion even further. I ended up in dilemma whether to
+              teach myself, enroll in a conversion Master degree at the
+              University or enroll at a Bootcamp.
+            </Text>
+
+            <Text textType="h1" className="topTitle">
+              School of Code
+            </Text>
+            <Text className="first-bio">
+              I ended up finding School of Code on Google. I watched their
+              videos on their YouTube channel, read their testimonials and I was
+              sold. I loved that they emphasises on working with people from
+              various backgrounds, different ages as well as having no coding
+              background which made me feel I would be part of the team. I
+              immediately applied and my life has not been the same since then.
+              I was selected one of the 180+ out of over 1800 applicants.
+            </Text>
+            <Text className="first-bio">
+              It taught me not only programming languages, but equipping me with
+              the skills I needed to step into the Tech. They covered from
+              JavaScript to React to UX/UI to PostgreSQL to agile methodologies.
+              Each week, I met different people from the course and had the
+              chance to communicate, utilise Pair-Programming and participate
+              weekly Hackathons whenever possible.
+            </Text>
+          </S.TextWrap>
+        </S.Container>
+      </S.AboutMe>
+    </MainLayout>
   );
 };
 
