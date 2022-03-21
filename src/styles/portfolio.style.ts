@@ -5,27 +5,29 @@ export const Portfolio = styled.div`
   margin: 0;
   height: 100vh;
   overflow: auto;
-  display: flex;
-  justify-content: start;
-  flex-direction: column;
-  top: 15%;
-  left: 10%;
+
   .portfolio-sub {
     color: ${style.colors.lightergreen};
     font-style: italic;
     font-weight: 500;
+    /* border: 5px teal solid; */
   }
 `;
 
 export const ProjectWrapper = styled.div`
   /* border: 5px teal solid; */
-  margin-top: 100px;
-  position: relative;
   display: flex;
-  justify-content: start;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 100px;
+  display: flex;
+  @media (max-width: ${style.breakPoints.xl}) {
+    flex-direction: column;
+  }
 `;
 
 export const TextProjectWrapper = styled.div`
   /* border: 10px teal solid; */
   margin-top: 10em;
+  margin-left: 30px;
 `;

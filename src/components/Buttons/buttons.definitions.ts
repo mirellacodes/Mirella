@@ -3,4 +3,5 @@ export type TButtonProps = {
   onClick?: () => void;
   allBtns?: boolean;
   className: string;
+  target?: string;
 };

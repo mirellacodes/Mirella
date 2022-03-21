@@ -3,4 +3,5 @@ export type TProjectCard = {
   className?: string;
   projectCard?: string;
   description?: string;
+  link?: string;
 };

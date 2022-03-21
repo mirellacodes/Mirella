@@ -4,9 +4,6 @@ import styles from "../../styles/style.config.json";
 export const Wrapper = styled.div`
   position: relative;
   /* border: green solid 5px; */
-  /* display: flex; */
-  /* align-items: center; */
-  /* flex-direction: column; */
   padding-left: 3%;
   padding-right: 3%;
 
@@ -17,8 +14,8 @@ export const Wrapper = styled.div`
 `;
 
 export const ProjCard = styled.div`
-  width: 700px;
-  height: 700px;
+  width: 500px;
+  height: 500px;
   background-color: white;
   border-radius: 22px;
   padding: 10px;
