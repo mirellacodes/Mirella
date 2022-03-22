@@ -3,7 +3,7 @@
 ## Website
 
 https://mirella-nathina.vercel.app/ <br>
-The app is not fully functional yet!
+The app is not fully functional yet! So far, it works on desktop only. 
 
 ## What is it?
 
