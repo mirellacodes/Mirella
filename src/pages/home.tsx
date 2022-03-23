@@ -55,7 +55,7 @@ const Home: NextPage = () => {
 
             <FadeIn delay={1500} transitionDuration={2000}>
               <Buttons
-                onClick={() => router.push("https://linktr.ee/mirellacodes")}
+                onClick={() => window.open("https://linktr.ee/mirellacodes")}
                 className="contactMe"
               >
                 Contact Me

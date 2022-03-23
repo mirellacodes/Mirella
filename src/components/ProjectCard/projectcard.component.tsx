@@ -55,7 +55,7 @@ export function ProjectCard({
               <Text textType="h2">{item.projectCard}</Text>
               <Text>{item.description}</Text>
               <Buttons
-                onClick={() => location.assign(item.link)}
+                onClick={() => window.open(item.link)}
                 className={item.className}
               >
                 {item.linkName}
