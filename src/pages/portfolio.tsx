@@ -6,10 +6,15 @@ import * as S from "../styles/portfolio.style";
 import { ProjectCard } from "../components/ProjectCard/projectcard.component";
 import { Buttons } from "../components/Buttons/buttons.component";
 import FadeIn from "react-fade-in";
+import Head from "next/head";
 
 const Portfolio: NextPage = () => {
   return (
     <>
+      <Head>
+        <title>Mirella's Portfolio | Portfolio</title>
+        <html lang="en" />
+      </Head>
       <MainLayout>
         <NavBar />
         <S.Portfolio>
