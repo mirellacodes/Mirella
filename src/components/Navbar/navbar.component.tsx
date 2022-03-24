@@ -36,9 +36,9 @@ export function NavBar({}) {
     <>
       <S.NavWrapper>
         <S.TextWrapper>
-          <Text className="logo" textType="h1">
+          <a href="/" className="logo">
             Mirella
-          </Text>
+          </a>
         </S.TextWrapper>
         <S.NavBarUL className="navBar">
           {MenuItems.map((item, index) => {

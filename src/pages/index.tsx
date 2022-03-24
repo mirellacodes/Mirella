@@ -11,11 +11,14 @@ import FadeIn from "react-fade-in";
 import Link from "next/link";
 import Home from "./home";
 import Portfolio from "./portfolio";
+import AboutMe from "./aboutme";
 
 const Main: NextPage = () => {
   return (
     <>
       <Home />
+      <Portfolio />
+      <AboutMe />
     </>
   );
 };
