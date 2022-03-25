@@ -10,6 +10,7 @@ export const Portfolio = styled.div`
     color: ${style.colors.lightergreen};
     font-style: italic;
     font-weight: 500;
+
     /* border: 5px teal solid; */
   }
 `;
@@ -18,12 +19,12 @@ export const ProjectWrapper = styled.div`
   /* border: 5px teal solid; */
   display: flex;
   justify-content: center;
-  flex-direction: row;
+  flex-wrap: wrap;
   margin-top: 100px;
-  display: flex;
-  @media (max-width: ${style.breakPoints.xl}) {
+  overflow: hidden;
+  /* @media (max-width: ${style.breakPoints.m}) {
     flex-direction: column;
-  }
+  } */
 `;
 
 export const TextProjectWrapper = styled.div`
