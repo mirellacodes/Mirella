@@ -12,13 +12,12 @@ import Link from "next/link";
 import Home from "./home";
 import Portfolio from "./portfolio";
 import AboutMe from "./aboutme";
+import ContactMe from "./contactme";
 
 const Main: NextPage = () => {
   return (
     <>
       <Home />
-      <Portfolio />
-      <AboutMe />
     </>
   );
 };
